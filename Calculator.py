@@ -2,7 +2,6 @@ n = int(input("Enter the number of values:"))
 values = []
 for i in range(n):
     values.append(int(input("Enter the value:")))
-
 sum_values = 0
 product_values = 1
 difference_values = values[0]
@@ -14,17 +13,12 @@ def divide_values(values):
             return None
         result /=value
     return result
-
-
 for value in values:
     sum_values += value
     product_values *= value
-
 for value in values[1:]:
     difference_values -= value
-
 division_result=divide_values(values)
-
 print("Sum:", sum_values)
 print("Product:", product_values)
 print("Difference:", difference_values)
